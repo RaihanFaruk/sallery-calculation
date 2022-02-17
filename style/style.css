@@ -1,4 +1,19 @@
 .heightCssImg {
     width: 470px;
-    Height: 607px;
+    Height: 560px;
+}
+
+.bg-colore {
+    background-image: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+.input-Feild {
+    width: 70px;
+    margin: 0px 10px 0px 10px;
+}
+
+.input-all {
+    outline: none;
+    border-radius: 5px;
+    padding: 4px;
 }

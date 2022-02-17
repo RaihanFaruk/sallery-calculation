@@ -5,7 +5,7 @@ function getElement(inputId) {
         return alert("please fill all input box");
     } else if (getId < 0) {
         return alert("please enter valid numbers");
-    } else if (isNaN(getId)) {
+    } else if (isNaN(getId)!= 0 ) {
         return alert("plese input only numbers");
     }
     return getId;
