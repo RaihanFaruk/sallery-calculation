@@ -1,13 +1,13 @@
-// // calculator button
-// document.getElementById('calculator').addEventListener('click', function(){
-//     const userIncome = document.getElementById('userIncome').value ;
-//     // all spend sum
-//     const foodCost = document.getElementById('foodCost').value ;
-//     const foodCost = document.getElementById('rentCost').value ;
-//     const foodCost = document.getElementById('clothCost').value ;
-//     const foodCost = document.getElementById('totalSpend') ;
-//     const totalSpend1 = parseFloat(rentCost) +
-    
-//     // const totalCost =
+// calculator button call right now
 
-// })
+document.getElementById("calculate").addEventListener("click", function () {
+    const costStart = document.getElementById('IncomeTaka').value;
+
+
+    ///////// cost right now
+    const food = document.getElementById('expen-Food')
+    const rent = document.getElementById('expen-rent')
+    const clo = document.getElementById('expen-cloth')
+    const total = food + rent + clo + costStart;
+    console.log(total);
+})
