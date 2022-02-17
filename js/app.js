@@ -1,10 +1,16 @@
+//Error handle
 function getElement(inputId) {
     const getId = document.getElementById(inputId).value;
-    // if (isNaN(parseFloat(getId))) {
-    //   return alert("sorry");
-    // }
+    if (getId == "") {
+        return alert("please fill all input box");
+    } else if (getId < 0) {
+        return alert("please enter valid numbers");
+    } else if (isNaN(getId)) {
+        return alert("plese input only numbers");
+    }
     return getId;
 }
+
 
 //Calculate Button
 document.getElementById("calculate").addEventListener("click", function () {
@@ -25,8 +31,8 @@ document.getElementById("calculate").addEventListener("click", function () {
 
 //Saving Section
 document.getElementById("save-btn").addEventListener("click", function () {
-    const incomeInput = getElement("user-income");
-    const savingInput = getElement("saving-input");
+    const incomeInput = getElement("incomeTaka");
+    const savingInput = getElement("savingTaka");
     const userSaving = (incomeInput * savingInput) / 100;
     const currentSaving = document.getElementById("current-saving");
     currentSaving.innerText = userSaving;
